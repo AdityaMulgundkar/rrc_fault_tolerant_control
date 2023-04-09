@@ -108,3 +108,9 @@ Steps to run:
 - Python print_gps.py –connect 127.0.0.1:14551
 - Wait for sitl drone to stop/ get in RTL mode
 - Data will be printed in terminal as well as in the gps_data.csv
+
+
+## Custom MAVLINK builds
+pip3 uninstall pymavlink
+cd PX4-Autopilot/src/modules/mavlink/mavlink/pymavlink
+python setup.py install --user
